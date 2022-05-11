@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 now=$(date +"%Y_%m_%d_%H_%M_%S")
-LOGFILE=logfile-$now.txt
+LOGFILE=logfile-$now.out
 exec 2> $LOGFILE
 
 curl -s "https://gist.githubusercontent.com/kalinchernev/486393efcca01623b18d/raw/daa24c9fea66afb7d68f8d69f0c4b8eeb9406e83/countries" > countries.txt
